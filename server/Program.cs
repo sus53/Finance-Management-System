@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using server.Data;
+using server.Interfaces;
+using server.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,9 +12,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDataContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddScoped<IStockRepository, StockRepository>();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
