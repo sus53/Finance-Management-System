@@ -7,7 +7,7 @@ using server.Models;
 
 namespace server.Mappers
 {
-    public static class StockMappers
+    public static class StockMapper
     {
         public static StockDto ToStockDto(this Stock stock)
         {
@@ -23,7 +23,7 @@ namespace server.Mappers
             };
         }
 
-        public static Stock ToStockFromCreateDto(this CreateStockDto stockDto)
+        public static Stock ToStockFromCreateDto(this CreateStockRequestDto stockDto)
         {
             return new Stock
             {
