@@ -9,7 +9,7 @@ namespace server.Mappers
 {
     public static class CommentMapper
     {
-        public static CommentDto ToCommentDto(Comment comment)
+        public static CommentDto ToCommentDto(this Comment comment)
         {
             return new CommentDto
             {
@@ -20,14 +20,13 @@ namespace server.Mappers
                 StockId = comment.StockId
             };
         }
-        public static Comment ToCommentFromCommentDto(CommentDto commentDto)
+        public static Comment ToCommentFromCommentDto(this CommentDto commentDto, int stockId)
         {
             return new Comment
             {
                 Title = commentDto.Title,
                 Content = commentDto.Content,
-                CreatedOn = commentDto.CreatedOn,
-                StockId = commentDto.StockId
+                StockId = stockId
             };
         }
     }

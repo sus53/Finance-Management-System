@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\.NET\\Finance\\server\\server.csproj": {}
+    "E:\\.NET\\Finance Manager\\server\\server.csproj": {}
   },
   "projects": {
-    "E:\\.NET\\Finance\\server\\server.csproj": {
+    "E:\\.NET\\Finance Manager\\server\\server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\.NET\\Finance\\server\\server.csproj",
+        "projectUniqueName": "E:\\.NET\\Finance Manager\\server\\server.csproj",
         "projectName": "server",
-        "projectPath": "E:\\.NET\\Finance\\server\\server.csproj",
+        "projectPath": "E:\\.NET\\Finance Manager\\server\\server.csproj",
         "packagesPath": "C:\\Users\\Shreejan\\.nuget\\packages\\",
-        "outputPath": "E:\\.NET\\Finance\\server\\obj\\",
+        "outputPath": "E:\\.NET\\Finance Manager\\server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Shreejan\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.4, )"
