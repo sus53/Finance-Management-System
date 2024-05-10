@@ -20,13 +20,22 @@ namespace server.Mappers
                 StockId = comment.StockId
             };
         }
-        public static Comment ToCommentFromCommentDto(this CommentDto commentDto, int stockId)
+        public static Comment ToCommentFromCreate(this CreateCommentRequestDto commentDto, int stockId)
         {
             return new Comment
             {
                 Title = commentDto.Title,
                 Content = commentDto.Content,
                 StockId = stockId
+            };
+        }
+
+        public static Comment ToCommentFromUpdate(this UpdateCommentRequestDto commentDto)
+        {
+            return new Comment
+            {
+                Title = commentDto.Title,
+                Content = commentDto.Content
             };
         }
     }

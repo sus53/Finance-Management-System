@@ -39,15 +39,13 @@ namespace server.Repository
             return await _context.Comment.FindAsync(id);
         }
 
-        public async Task<Comment?> UpdateAsync(int id, UpdateCommentRequestDto commentDto)
+        public async Task<Comment?> UpdateAsync(int id, Comment comment)
         {
             var existingModel = await _context.Comment.FindAsync(id);
             if (existingModel == null) return null;
 
-            existingModel.Title = commentDto.Title;
-            existingModel.Content = commentDto.Content;
-            existingModel.CreatedOn = commentDto.CreatedOn;
-            existingModel.StockId = commentDto.StockId;
+            existingModel.Title = comment.Title;
+            existingModel.Content = comment.Content;
 
             await _context.SaveChangesAsync();
             return existingModel;

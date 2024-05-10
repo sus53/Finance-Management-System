@@ -12,7 +12,7 @@ namespace server.Interfaces
         Task<List<Comment>> GetAllAsync();
         Task<Comment?> GetAsync(int id);
         Task<Comment> CreateAsync(Comment commentDto);
-        Task<Comment?> UpdateAsync(int id, UpdateCommentRequestDto commentDto);
+        Task<Comment?> UpdateAsync(int id, Comment comment);
         Task<Comment?> DeleteAsync(int id);
     }
 }

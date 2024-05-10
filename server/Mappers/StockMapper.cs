@@ -24,7 +24,7 @@ namespace server.Mappers
             };
         }
 
-        public static Stock ToStockFromCreateDto(this CreateStockRequestDto stockDto)
+        public static Stock ToStockFromCreate(this CreateStockRequestDto stockDto)
         {
             return new Stock
             {
