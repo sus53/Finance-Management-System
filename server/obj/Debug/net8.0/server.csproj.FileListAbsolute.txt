@@ -278,3 +278,5 @@ E:\.NET\Finance Manager\server\obj\Debug\net8.0\scopedcss\bundle\server.styles.c
 E:\.NET\Finance Manager\server\obj\Debug\net8.0\server.csproj.Up2Date
 E:\.NET\Finance Manager\server\obj\Debug\net8.0\server.genruntimeconfig.cache
 E:\.NET\Finance Manager\server\obj\Debug\net8.0\ref\server.dll
+E:\.NET\Finance Manager\server\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\.NET\Finance Manager\server\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
