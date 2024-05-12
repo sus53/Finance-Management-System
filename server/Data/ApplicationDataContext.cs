@@ -19,7 +19,8 @@ namespace server.Data
         {
             base.OnModelCreating(builder);
 
-            List<IdentityRole> roles = new List<IdentityRole>{
+            List<IdentityRole> roles =
+            [
                 new IdentityRole {
                     Name = "Admin",
                     NormalizedName = "ADMIN",
@@ -29,7 +30,7 @@ namespace server.Data
                     Name = "User",
                     NormalizedName = "USER"
                 }
-            };
+            ];
 
             builder.Entity<IdentityRole>().HasData(roles);
         }

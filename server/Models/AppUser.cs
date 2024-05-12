@@ -8,6 +8,5 @@ namespace server.Models
 {
     public class AppUser : IdentityUser
     {
-
     }
 }

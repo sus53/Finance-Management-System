@@ -6,6 +6,7 @@ using server.Data;
 using server.Interfaces;
 using server.Models;
 using server.Repository;
+using server.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -57,6 +58,8 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddScoped<IStockRepository, StockRepository>();
 builder.Services.AddScoped<ICommentRepository, CommentRepository>();
+builder.Services.AddScoped<ITokenService, TokenService>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
