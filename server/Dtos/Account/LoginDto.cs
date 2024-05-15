@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace server.Dtos.Account
 {
-    public class NewUserDto
+    public class LoginDto
     {
-        public string? Email { get; set; }
+        [Required]
+        public string? Password { get; set; }
+        [Required]
         public string? UserName { get; set; }
-        public string? Token { get; set; }
     }
 }

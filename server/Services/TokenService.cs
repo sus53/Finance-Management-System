@@ -32,7 +32,7 @@ namespace server.Services
 
             var tokenDescripter = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(),
+                Subject = new ClaimsIdentity(claims),
                 Expires = DateTime.Now.AddDays(7),
                 SigningCredentials = creds,
                 Issuer = _config["JWT:Issuer"],

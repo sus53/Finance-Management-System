@@ -7,6 +7,7 @@ using System.Xml;
 
 namespace server.Models
 {
+    [Table("Stock")]
     public class Stock
     {
         public int Id { get; set; }
